@@ -109,18 +109,23 @@ class PortfolioController extends Controller
                     'Admin & Member dashboard',
                     'User authentication and profiles',
                     'Generate certificates',
+                    'QR Code Generation',
+                    'Content Management',
                 ]
             ],
             [
                 'id' => 2,
                 'title' => 'Chapters',
-                'description' => 'A membership website portal for architect members.',
+                'description' => 'A membership website portal for membership dues collection, events registrations, missions, and rewards.',
                 'image' => 'projects/membership-portal.png',
                 'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL'],
                 'features' => [
                     'Admin & Member dashboard',
                     'User authentication and profiles',
                     'Generate certificates',
+                    'Missions & Activities',
+                    'QR Code Generation',
+                    'Rewards & Points System',
                 ]
             ],
             [
@@ -130,27 +135,28 @@ class PortfolioController extends Controller
                 'image' => 'projects/construct-pro.png',
                 'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
                 'features' => [
-                    'Product catalog with categories and filters',
-                    'Shopping cart and wishlist functionality',
-                    'Secure payment processing with Stripe',
-                    'Order management and tracking',
-                    'Admin dashboard for inventory management',
-                    'User authentication and profiles'
+                    'SuperAdmin, Project Manager, Admin, & Member dashboard',
+                    'User authentication and profiles',
+                    'Invoice Management',
+                    'Expense Tracking',
+                    'Daily Reports',
+                    'Web & Mobile Access',
+                    'Centralized Project Dashboard',
+                    'Data History & Records',
                 ]
             ],
             [
                 'id' => 4,
                 'title' => 'DMPR',
-                'description' => 'Mobile App for inspection and evaluation of structures affected by disasters.',
+                'description' => 'A website and mobile app for inspection and evaluation of structures affected by disasters.',
                 'image' => 'projects/dmpr-website.png',
                 'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
                 'features' => [
-                    'Product catalog with categories and filters',
-                    'Shopping cart and wishlist functionality',
-                    'Secure payment processing with Stripe',
-                    'Order management and tracking',
-                    'Admin dashboard for inventory management',
-                    'User authentication and profiles'
+                    'GPS Location Tagging',
+                    'Admin & Member dashboard',
+                    'User authentication and profiles',
+                    'Inspector & Role Management',
+                    'Web & Mobile Access',
                 ]
             ],
             [
@@ -162,7 +168,7 @@ class PortfolioController extends Controller
                 'features' => [
                     'Product catalog with categories and filters',
                     'Shopping cart and wishlist functionality',
-                    'Secure payment processing with Stripe',
+                    'Secure payment processing on paymongo',
                     'Order management and tracking',
                     'Admin dashboard for inventory management',
                     'User authentication and profiles'
@@ -175,12 +181,12 @@ class PortfolioController extends Controller
                 'image' => 'projects/white-bg.jpg',
                 'technologies' => ['React Native', 'Expo', 'Nativewind'],
                 'features' => [
-                    'Product catalog with categories and filters',
-                    'Shopping cart and wishlist functionality',
-                    'Secure payment processing with Stripe',
-                    'Order management and tracking',
-                    'Admin dashboard for inventory management',
-                    'User authentication and profiles'
+                    'Pipe Dimension Measurement',
+                    'Measurement Input & Calculator',
+                    'Unit Conversion',
+                    'Pipe Type Selection',
+                    'Offline Access',
+                    'User-Friendly Interface',
                 ]
             ],
             [
@@ -190,26 +196,25 @@ class PortfolioController extends Controller
                 'image' => 'projects/white-bg.jpg',
                 'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
                 'features' => [
-                    'Product catalog with categories and filters',
-                    'Shopping cart and wishlist functionality',
-                    'Secure payment processing with Stripe',
-                    'Order management and tracking',
-                    'Admin dashboard for inventory management',
+                    'Digital Business Card Builder',
+                    'Custom Design & Branding',
+                    'QR Code Generation',
+                    'One-Tap Contact Saving',
+                    'Admin & User dashboard',
                     'User authentication and profiles'
                 ]
             ],
             [
                 'id' => 8,
                 'title' => 'Events',
-                'description' => 'A website for events registration',
+                'description' => 'A website for events registration.',
                 'image' => 'projects/white-bg.jpg',
                 'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL'],
                 'features' => [
-                    'Product catalog with categories and filters',
-                    'Shopping cart and wishlist functionality',
-                    'Secure payment processing with Stripe',
-                    'Order management and tracking',
-                    'Admin dashboard for inventory management',
+                    'Event Browsing',
+                    'Payment Integration',
+                    'QR Code Generation',
+                    'Admin & Member dashboard',
                     'User authentication and profiles'
                 ]
             ],
@@ -220,11 +225,10 @@ class PortfolioController extends Controller
                 'image' => 'projects/white-bg.jpg',
                 'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL'],
                 'features' => [
-                    'Product catalog with categories and filters',
-                    'Shopping cart and wishlist functionality',
-                    'Secure payment processing with Stripe',
-                    'Order management and tracking',
-                    'Admin dashboard for inventory management',
+                    'Event Browsing',
+                    'Payment Integration',
+                    'QR Code Generation',
+                    'Admin & Member dashboard',
                     'User authentication and profiles'
                 ]
             ],
