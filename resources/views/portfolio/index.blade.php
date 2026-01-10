@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Laravel Developer Portfolio')
+@section('title', 'Calipay Portfolio')
 
 @section('content')
     <!-- Hero Section -->
@@ -31,29 +31,35 @@
     <section class="py-5 my-5">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="row g-4">
-                @foreach ($projects as $project)
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card project-card">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ $project['title'] }}</h5>
-                                <p class="card-text">{{ $project['description'] }}</p>
-                                <div class="mt-3">
-                                    @foreach ($project['technologies'] as $tech)
-                                        <span class="tech-badge {{ strtolower(str_replace([' ', '.'], '', $tech)) }}">
-                                            {{ $tech }}
-                                        </span>
-                                    @endforeach
-                                </div>
-                                <div class="mt-3">
-                                    <a href="{{ route('project.show', $project['id']) }}"
-                                        class="btn btn-sm btn-primary">View Project</a>
+            @if ($projects->isEmpty())
+                <div class="alert alert-info text-center">
+                    No projects available yet. Check back soon!
+                </div>
+            @else
+                <div class="row g-4">
+                    @foreach ($projects as $project)
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card project-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $project['title'] }}</h5>
+                                    <p class="card-text">{{ $project['description'] }}</p>
+                                    <div class="mt-3">
+                                        @foreach ($project['technologies'] as $tech)
+                                            <span class="tech-badge {{ strtolower(str_replace([' ', '.'], '', $tech)) }}">
+                                                {{ $tech }}
+                                            </span>
+                                        @endforeach
+                                    </div>
+                                    <div class="mt-3">
+                                        <a href="{{ route('project.show', $project->slug) }}"
+                                            class="btn btn-sm btn-primary">View Project</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
+            @endif
         </div>
     </section>
 
@@ -63,11 +69,7 @@
             <h2 class="section-title">Let's Work Together</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    @if (session('success'))
-                        <div class="alert alert-success">{{ session('success') }}</div>
-                    @endif
-
-                    <form action="{{ route('contact.submit') }}" method="POST">
+                    <form id="contactForm" action="{{ route('contact.submit') }}" method="POST">
                         @csrf
                         <div class="mb-3">
                             <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
@@ -91,7 +93,10 @@
                             @enderror
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span id="btnText">Send Message</span>
+                                <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status"></span>
+                            </button>
                         </div>
                     </form>
                 </div>

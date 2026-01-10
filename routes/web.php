@@ -16,5 +16,5 @@ use App\Http\Controllers\PortfolioController;
 
 
 Route::get('/', [PortfolioController::class, 'index'])->name('home');
-Route::get('/project/{id}', [PortfolioController::class, 'show'])->name('project.show');
+Route::get('/project/{slug}', [PortfolioController::class, 'show'])->name('project.show');
 Route::post('/contact', [PortfolioController::class, 'contact'])->name('contact.submit');
