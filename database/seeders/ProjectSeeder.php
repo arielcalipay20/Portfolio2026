@@ -18,7 +18,7 @@ class ProjectSeeder extends Seeder
                 'slug' => 'national',
                 'description' => 'A membership website portal for architect members.',
                 'image' => 'projects/national.png',
-                'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL'],
+                'technologies' => ['Laravel 10', 'Livewire', 'Bootstrap v5.3', 'MySQL'],
                 'features' => [
                     'Admin & Member dashboard',
                     'User authentication and profiles',
@@ -34,7 +34,7 @@ class ProjectSeeder extends Seeder
                 'slug' => 'chapters',
                 'description' => 'A membership website portal for membership dues collection, events registrations, missions, and rewards.',
                 'image' => 'projects/membership-portal.png',
-                'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL'],
+                'technologies' => ['Laravel 10', 'Livewire', 'Bootstrap v5.3', 'MySQL'],
                 'features' => [
                     'Admin & Member dashboard',
                     'User authentication and profiles',
@@ -51,7 +51,7 @@ class ProjectSeeder extends Seeder
                 'slug' => 'construct-pro',
                 'description' => 'A website & mobile app for monitoring your constructions tasks, and recording invoices, expenses, and daily reports.',
                 'image' => 'projects/construct-pro.png',
-                'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
+                'technologies' => ['Laravel 10', 'Livewire', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
                 'features' => [
                     'SuperAdmin, Project Manager, Admin, & Member dashboard',
                     'User authentication and profiles',
@@ -70,7 +70,7 @@ class ProjectSeeder extends Seeder
                 'slug' => 'dmpr',
                 'description' => 'A website and mobile app for inspection and evaluation of structures affected by disasters.',
                 'image' => 'projects/dmpr-website.png',
-                'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
+                'technologies' => ['Laravel 10', 'Livewire', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
                 'features' => [
                     'GPS Location Tagging',
                     'Admin & Member dashboard',
@@ -120,13 +120,13 @@ class ProjectSeeder extends Seeder
                 'slug' => 'cardko',
                 'description' => 'A website & mobile app for creating digital business cards.',
                 'image' => 'projects/white-bg.jpg',
-                'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
+                'technologies' => ['Laravel 10', 'Livewire', 'Bootstrap v5.3', 'MySQL', 'React Native', 'Expo', 'Nativewind'],
                 'features' => [
-                    'Interactive charts and graphs',
-                    'Real-time data monitoring',
-                    'Custom report generation',
-                    'Data export to CSV/Excel',
-                    'Customizable dashboard widgets',
+                    'User & Account Features',
+                    'Digital Business Card Creation',
+                    'Sharing & Networking',
+                    'Contact Management',
+                    'NFC Card Integration',
                     'Responsive design for mobile viewing'
                 ],
                 'is_featured' => true,
@@ -137,7 +137,7 @@ class ProjectSeeder extends Seeder
                 'slug' => 'events',
                 'description' => 'A website for events registration.',
                 'image' => 'projects/white-bg.jpg',
-                'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL'],
+                'technologies' => ['Laravel 10', 'Livewire', 'Bootstrap v5.3', 'MySQL'],
                 'features' => [
                     'Event Browsing',
                     'Payment Integration',
@@ -153,7 +153,7 @@ class ProjectSeeder extends Seeder
                 'slug' => 'technocon',
                 'description' => 'A website for events registration specifically on TechnoCon members.',
                 'image' => 'projects/white-bg.jpg',
-                'technologies' => ['Laravel 10', 'Bootstrap v5.3', 'MySQL'],
+                'technologies' => ['Laravel 10', 'Livewire', 'Bootstrap v5.3', 'MySQL'],
                 'features' => [
                     'Event Browsing',
                     'Payment Integration',
